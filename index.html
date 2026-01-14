@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>wdyn — ex-764 / com survivor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #ffffff;
+      --text-muted: #bbbbbb;
+      --accent: #ffffff;
+      --border: #222222;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+    .container {
+      max-width: 1200px;          /* slightly wider for better spacing */
+      margin: 0 auto;
+      padding: 0 6vw;             /* more side padding = more zoomed-out feel */
+    }
+    header {
+      height: 100vh;
+      min-height: 680px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 0;
+    }
+    .hero h1 {
+      font-family: 'Inconsolata', 'Courier New', monospace;
+      font-size: clamp(4rem, 10vw, 9rem);    /* smaller max size */
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      line-height: 0.92;
+      margin-bottom: 1.8rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hero h1.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero .subtitle {
+      font-family: 'Inconsolata', 'Courier New', monospace;
+      font-size: clamp(1.5rem, 4.5vw, 2.4rem);  /* reduced size */
+      font-weight: 400;
+      max-width: 780px;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+    }
+    .hero .subtitle.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .social-links {
+      display: flex;
+      gap: 3rem;
+      font-size: 1.25rem;           /* slightly smaller */
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s;
+    }
+    .social-links.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    section {
+      padding: 16vh 0;              /* more vertical space */
+      min-height: 80vh;
+      border-top: 1px solid var(--border);
+    }
+    h2 {
+      font-family: 'Inconsolata', 'Courier New', monospace;
+      font-size: clamp(3rem, 7vw, 5.5rem);  /* reduced max size */
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+      letter-spacing: -0.03em;
+    }
+    p {
+      font-size: 1.15rem;           /* slightly smaller body text */
+      max-width: 720px;
+      color: var(--text-muted);
+      margin-bottom: 1.6rem;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-out;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    ul {
+      list-style: none;
+      font-size: 1.15rem;
+      margin-top: 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="hero">
+        <h1 id="name">wdyn</h1>
+        <p class="subtitle reveal">
+          ex-764 member. tried to kms 3 times. used to be in a cult. used to be really fucking mentally ill. fucked up a lot in life.
+        </p>
+        <div class="social-links reveal">
+          <a href="https://x.com/wealthydynacoc" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          <span>Discord: wdyn2.</span> <!-- plain text, not clickable -->
+        </div>
+      </div>
+    </header>
+
+    <section id="story" class="reveal">
+      <h2>THE STORY</h2>
+      <p class="reveal">
+        my names wdyn / convict764 im an ex 764 member i was pulled into com, i use to be insane i use to watch cheese pizza and beastiality, i escaped 764 i escaped com, i nearly got doxxed, it isnt worth it to join com, i made girls cut themselves and from guilt i tried to kill my self 2 times, and then after that i still had my best friend so i wasnt depressed anymore but then i also dragged my bestfriend into com, and he got swatted, and i had no one left and i tried to kill my self the 3rd time, the last week a fbi agent was communicating with me, he asked if im affiliated and i spilled what im spilling to you right now, and the fbi agent originated his contact with me through my own friends account, and then my bestfriend hung himself in prison. fly high shozzy.. i was barely alive at these dark times and he helped me, i swear i wish i seen him again bro..
+      </p>
+      <p class="reveal">
+        ive made mistakes, alot, dont follow my footsteps and participate in com, it might be awarding at first but it'll haunt you forever, com isnt worth it.
+      </p>
+    </section>
+
+    <section id="now" class="reveal">
+      <h2>NOW</h2>
+      <p class="reveal">
+        things have been going well. ive been doing alright and making some friends and slowly becoming the old me from 2 years ago before com i praise now, i praise my past self and i want to revert my decisions and be in the past, i want to NOT deal with this.
+      </p>
+      <p class="reveal">
+        if you're in a bad spot you can reach out to me via discord, and ill help you leave com, no cost no nothing, ill teach you how to get out of com without being doxxed, or having anything on your head, you can leave its just hard, but its possible. love wdyn.. discord : wdyn2.
+      </p>
+    </section>
+
+    <section id="links" class="reveal">
+      <h2>LINKS / CONTACT</h2>
+      <ul>
+        <li><a href="https://x.com/wealthydynacoc" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
+        <li>Discord: wdyn2.</li> <!-- plain text -->
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    // Fade in on scroll + load
+    const reveals = document.querySelectorAll('.reveal, h1, .subtitle, .social-links');
+
+    function checkReveal() {
+      reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        const elementVisible = 180; // slightly more lenient reveal
+
+        if (elementTop < windowHeight - elementVisible) {
+          el.classList.add('active', 'visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkReveal);
+    checkReveal(); // Initial check
+  </script>
+
+</body>
+</html>
